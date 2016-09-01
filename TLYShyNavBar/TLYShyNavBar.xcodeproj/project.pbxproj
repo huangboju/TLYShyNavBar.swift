@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8C665641D5DA2B7006CD8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665631D5DA2B7006CD8FC /* AppDelegate.swift */; };
+		D8C665661D5DA2B7006CD8FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665651D5DA2B7006CD8FC /* ViewController.swift */; };
+		D8C665691D5DA2B7006CD8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C665671D5DA2B7006CD8FC /* Main.storyboard */; };
+		D8C6656B1D5DA2B7006CD8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C6656A1D5DA2B7006CD8FC /* Assets.xcassets */; };
+		D8C6656E1D5DA2B7006CD8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6656C1D5DA2B7006CD8FC /* LaunchScreen.storyboard */; };
+		D8C665791D5DA2B8006CD8FC /* TLYShyNavBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665781D5DA2B8006CD8FC /* TLYShyNavBarTests.swift */; };
+		D8C665841D5DA2B8006CD8FC /* TLYShyNavBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665831D5DA2B8006CD8FC /* TLYShyNavBarUITests.swift */; };
+		D8C665951D5DA419006CD8FC /* TLYShyChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665941D5DA419006CD8FC /* TLYShyChild.swift */; };
+		D8C665971D5DA42E006CD8FC /* TLYShyParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665961D5DA42E006CD8FC /* TLYShyParent.swift */; };
+		D8C6659A1D5DA4DB006CD8FC /* TLYShyScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665991D5DA4DB006CD8FC /* TLYShyScrollViewController.swift */; };
+		D8C6659C1D5DA762006CD8FC /* TLYShyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6659B1D5DA762006CD8FC /* TLYShyViewController.swift */; };
+		D8C665A11D5DAEE3006CD8FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665A01D5DAEE3006CD8FC /* Extensions.swift */; };
+		D8C665A31D5DAEF4006CD8FC /* TLYShyStatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665A21D5DAEF4006CD8FC /* TLYShyStatusBarController.swift */; };
+		D8C665A51D5E1423006CD8FC /* TLYShyNavBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665A41D5E1423006CD8FC /* TLYShyNavBarManager.swift */; };
+		D8C665A71D5E18A1006CD8FC /* TLYDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C665A61D5E18A1006CD8FC /* TLYDelegateProxy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8C665751D5DA2B8006CD8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C665581D5DA2B7006CD8FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C6655F1D5DA2B7006CD8FC;
+			remoteInfo = TLYShyNavBar;
+		};
+		D8C665801D5DA2B8006CD8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C665581D5DA2B7006CD8FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C6655F1D5DA2B7006CD8FC;
+			remoteInfo = TLYShyNavBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8C665601D5DA2B7006CD8FC /* TLYShyNavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLYShyNavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C665631D5DA2B7006CD8FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8C665651D5DA2B7006CD8FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8C665681D5DA2B7006CD8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8C6656A1D5DA2B7006CD8FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8C6656D1D5DA2B7006CD8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C6656F1D5DA2B7006CD8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C665741D5DA2B8006CD8FC /* TLYShyNavBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLYShyNavBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C665781D5DA2B8006CD8FC /* TLYShyNavBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLYShyNavBarTests.swift; sourceTree = "<group>"; };
+		D8C6657A1D5DA2B8006CD8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C6657F1D5DA2B8006CD8FC /* TLYShyNavBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLYShyNavBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C665831D5DA2B8006CD8FC /* TLYShyNavBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLYShyNavBarUITests.swift; sourceTree = "<group>"; };
+		D8C665851D5DA2B8006CD8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C665941D5DA419006CD8FC /* TLYShyChild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYShyChild.swift; sourceTree = "<group>"; };
+		D8C665961D5DA42E006CD8FC /* TLYShyParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYShyParent.swift; sourceTree = "<group>"; };
+		D8C665981D5DA4A9006CD8FC /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D8C665991D5DA4DB006CD8FC /* TLYShyScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYShyScrollViewController.swift; sourceTree = "<group>"; };
+		D8C6659B1D5DA762006CD8FC /* TLYShyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYShyViewController.swift; sourceTree = "<group>"; };
+		D8C665A01D5DAEE3006CD8FC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
+		D8C665A21D5DAEF4006CD8FC /* TLYShyStatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYShyStatusBarController.swift; sourceTree = "<group>"; };
+		D8C665A41D5E1423006CD8FC /* TLYShyNavBarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYShyNavBarManager.swift; sourceTree = "<group>"; };
+		D8C665A61D5E18A1006CD8FC /* TLYDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLYDelegateProxy.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C6655D1D5DA2B7006CD8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C665711D5DA2B8006CD8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C6657C1D5DA2B8006CD8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8C665571D5DA2B7006CD8FC = {
+			isa = PBXGroup;
+			children = (
+				D8C665621D5DA2B7006CD8FC /* TLYShyNavBar */,
+				D8C665771D5DA2B8006CD8FC /* TLYShyNavBarTests */,
+				D8C665821D5DA2B8006CD8FC /* TLYShyNavBarUITests */,
+				D8C665611D5DA2B7006CD8FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C665611D5DA2B7006CD8FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C665601D5DA2B7006CD8FC /* TLYShyNavBar.app */,
+				D8C665741D5DA2B8006CD8FC /* TLYShyNavBarTests.xctest */,
+				D8C6657F1D5DA2B8006CD8FC /* TLYShyNavBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C665621D5DA2B7006CD8FC /* TLYShyNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				D8C6659F1D5DAEAE006CD8FC /* Extensions */,
+				D8C665911D5DA2EF006CD8FC /* Classes */,
+				D8C665631D5DA2B7006CD8FC /* AppDelegate.swift */,
+				D8C665651D5DA2B7006CD8FC /* ViewController.swift */,
+				D8C665671D5DA2B7006CD8FC /* Main.storyboard */,
+				D8C6656A1D5DA2B7006CD8FC /* Assets.xcassets */,
+				D8C6656C1D5DA2B7006CD8FC /* LaunchScreen.storyboard */,
+				D8C6656F1D5DA2B7006CD8FC /* Info.plist */,
+			);
+			path = TLYShyNavBar;
+			sourceTree = "<group>";
+		};
+		D8C665771D5DA2B8006CD8FC /* TLYShyNavBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8C665781D5DA2B8006CD8FC /* TLYShyNavBarTests.swift */,
+				D8C6657A1D5DA2B8006CD8FC /* Info.plist */,
+			);
+			path = TLYShyNavBarTests;
+			sourceTree = "<group>";
+		};
+		D8C665821D5DA2B8006CD8FC /* TLYShyNavBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8C665831D5DA2B8006CD8FC /* TLYShyNavBarUITests.swift */,
+				D8C665851D5DA2B8006CD8FC /* Info.plist */,
+			);
+			path = TLYShyNavBarUITests;
+			sourceTree = "<group>";
+		};
+		D8C665911D5DA2EF006CD8FC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D8C665981D5DA4A9006CD8FC /* Bridging-Header.h */,
+				D8C665941D5DA419006CD8FC /* TLYShyChild.swift */,
+				D8C665961D5DA42E006CD8FC /* TLYShyParent.swift */,
+				D8C665991D5DA4DB006CD8FC /* TLYShyScrollViewController.swift */,
+				D8C6659B1D5DA762006CD8FC /* TLYShyViewController.swift */,
+				D8C665A21D5DAEF4006CD8FC /* TLYShyStatusBarController.swift */,
+				D8C665A41D5E1423006CD8FC /* TLYShyNavBarManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D8C6659F1D5DAEAE006CD8FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8C665A01D5DAEE3006CD8FC /* Extensions.swift */,
+				D8C665A61D5E18A1006CD8FC /* TLYDelegateProxy.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8C6655F1D5DA2B7006CD8FC /* TLYShyNavBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C665881D5DA2B8006CD8FC /* Build configuration list for PBXNativeTarget "TLYShyNavBar" */;
+			buildPhases = (
+				D8C6655C1D5DA2B7006CD8FC /* Sources */,
+				D8C6655D1D5DA2B7006CD8FC /* Frameworks */,
+				D8C6655E1D5DA2B7006CD8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLYShyNavBar;
+			productName = TLYShyNavBar;
+			productReference = D8C665601D5DA2B7006CD8FC /* TLYShyNavBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8C665731D5DA2B8006CD8FC /* TLYShyNavBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C6658B1D5DA2B8006CD8FC /* Build configuration list for PBXNativeTarget "TLYShyNavBarTests" */;
+			buildPhases = (
+				D8C665701D5DA2B8006CD8FC /* Sources */,
+				D8C665711D5DA2B8006CD8FC /* Frameworks */,
+				D8C665721D5DA2B8006CD8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C665761D5DA2B8006CD8FC /* PBXTargetDependency */,
+			);
+			name = TLYShyNavBarTests;
+			productName = TLYShyNavBarTests;
+			productReference = D8C665741D5DA2B8006CD8FC /* TLYShyNavBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8C6657E1D5DA2B8006CD8FC /* TLYShyNavBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C6658E1D5DA2B8006CD8FC /* Build configuration list for PBXNativeTarget "TLYShyNavBarUITests" */;
+			buildPhases = (
+				D8C6657B1D5DA2B8006CD8FC /* Sources */,
+				D8C6657C1D5DA2B8006CD8FC /* Frameworks */,
+				D8C6657D1D5DA2B8006CD8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C665811D5DA2B8006CD8FC /* PBXTargetDependency */,
+			);
+			name = TLYShyNavBarUITests;
+			productName = TLYShyNavBarUITests;
+			productReference = D8C6657F1D5DA2B8006CD8FC /* TLYShyNavBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C665581D5DA2B7006CD8FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = xiAo_Ju;
+				TargetAttributes = {
+					D8C6655F1D5DA2B7006CD8FC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D8C665731D5DA2B8006CD8FC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D8C6655F1D5DA2B7006CD8FC;
+					};
+					D8C6657E1D5DA2B8006CD8FC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D8C6655F1D5DA2B7006CD8FC;
+					};
+				};
+			};
+			buildConfigurationList = D8C6655B1D5DA2B7006CD8FC /* Build configuration list for PBXProject "TLYShyNavBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8C665571D5DA2B7006CD8FC;
+			productRefGroup = D8C665611D5DA2B7006CD8FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C6655F1D5DA2B7006CD8FC /* TLYShyNavBar */,
+				D8C665731D5DA2B8006CD8FC /* TLYShyNavBarTests */,
+				D8C6657E1D5DA2B8006CD8FC /* TLYShyNavBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8C6655E1D5DA2B7006CD8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C6656E1D5DA2B7006CD8FC /* LaunchScreen.storyboard in Resources */,
+				D8C6656B1D5DA2B7006CD8FC /* Assets.xcassets in Resources */,
+				D8C665691D5DA2B7006CD8FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C665721D5DA2B8006CD8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C6657D1D5DA2B8006CD8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C6655C1D5DA2B7006CD8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C665971D5DA42E006CD8FC /* TLYShyParent.swift in Sources */,
+				D8C665A71D5E18A1006CD8FC /* TLYDelegateProxy.swift in Sources */,
+				D8C6659C1D5DA762006CD8FC /* TLYShyViewController.swift in Sources */,
+				D8C665951D5DA419006CD8FC /* TLYShyChild.swift in Sources */,
+				D8C665A51D5E1423006CD8FC /* TLYShyNavBarManager.swift in Sources */,
+				D8C665A11D5DAEE3006CD8FC /* Extensions.swift in Sources */,
+				D8C665A31D5DAEF4006CD8FC /* TLYShyStatusBarController.swift in Sources */,
+				D8C665661D5DA2B7006CD8FC /* ViewController.swift in Sources */,
+				D8C665641D5DA2B7006CD8FC /* AppDelegate.swift in Sources */,
+				D8C6659A1D5DA4DB006CD8FC /* TLYShyScrollViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C665701D5DA2B8006CD8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C665791D5DA2B8006CD8FC /* TLYShyNavBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C6657B1D5DA2B8006CD8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C665841D5DA2B8006CD8FC /* TLYShyNavBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8C665761D5DA2B8006CD8FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C6655F1D5DA2B7006CD8FC /* TLYShyNavBar */;
+			targetProxy = D8C665751D5DA2B8006CD8FC /* PBXContainerItemProxy */;
+		};
+		D8C665811D5DA2B8006CD8FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C6655F1D5DA2B7006CD8FC /* TLYShyNavBar */;
+			targetProxy = D8C665801D5DA2B8006CD8FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8C665671D5DA2B7006CD8FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C665681D5DA2B7006CD8FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8C6656C1D5DA2B7006CD8FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C6656D1D5DA2B7006CD8FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8C665861D5DA2B8006CD8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8C665871D5DA2B8006CD8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8C665891D5DA2B8006CD8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TLYShyNavBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TLYShyNavBar.TLYShyNavBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bojuhuang/Desktop/Repository/TLYShyNavBar/TLYShyNavBar/Classes/Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		D8C6658A1D5DA2B8006CD8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TLYShyNavBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TLYShyNavBar.TLYShyNavBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bojuhuang/Desktop/Repository/TLYShyNavBar/TLYShyNavBar/Classes/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D8C6658C1D5DA2B8006CD8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TLYShyNavBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TLYShyNavBar.TLYShyNavBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLYShyNavBar.app/TLYShyNavBar";
+			};
+			name = Debug;
+		};
+		D8C6658D1D5DA2B8006CD8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TLYShyNavBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TLYShyNavBar.TLYShyNavBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLYShyNavBar.app/TLYShyNavBar";
+			};
+			name = Release;
+		};
+		D8C6658F1D5DA2B8006CD8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TLYShyNavBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TLYShyNavBar.TLYShyNavBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TLYShyNavBar;
+			};
+			name = Debug;
+		};
+		D8C665901D5DA2B8006CD8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TLYShyNavBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TLYShyNavBar.TLYShyNavBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TLYShyNavBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C6655B1D5DA2B7006CD8FC /* Build configuration list for PBXProject "TLYShyNavBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C665861D5DA2B8006CD8FC /* Debug */,
+				D8C665871D5DA2B8006CD8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C665881D5DA2B8006CD8FC /* Build configuration list for PBXNativeTarget "TLYShyNavBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C665891D5DA2B8006CD8FC /* Debug */,
+				D8C6658A1D5DA2B8006CD8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8C6658B1D5DA2B8006CD8FC /* Build configuration list for PBXNativeTarget "TLYShyNavBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C6658C1D5DA2B8006CD8FC /* Debug */,
+				D8C6658D1D5DA2B8006CD8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8C6658E1D5DA2B8006CD8FC /* Build configuration list for PBXNativeTarget "TLYShyNavBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C6658F1D5DA2B8006CD8FC /* Debug */,
+				D8C665901D5DA2B8006CD8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8C665581D5DA2B7006CD8FC /* Project object */;
+}
