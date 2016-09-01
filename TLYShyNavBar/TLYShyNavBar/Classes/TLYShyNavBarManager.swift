@@ -53,7 +53,24 @@ class TLYShyNavBarManager: NSObject {
             scrollView?.addObserver(self, forKeyPath: "contentSize", options: .New, context: &kTLYShyNavBarManagerKVOContext)
         }
     }
-    var extensionView: UIView?
+    var extensionView: UIView? {
+        willSet {
+            if newValue != extensionView {
+                var bounds = newValue?.frame
+                bounds?.origin = .zero
+                
+                newValue?.frame = bounds!
+                
+                extensionViewContainer.frame = bounds!
+                extensionViewContainer.addSubview(newValue!)
+                extensionViewContainer.userInteractionEnabled = newValue!.userInteractionEnabled
+                let wasDisabled = disable
+                disable = true
+                layoutViews()
+                disable = wasDisabled
+            }
+        }
+    }
     var extensionViewBounds: CGRect {
         return extensionViewContainer.bounds
     }
@@ -251,12 +268,33 @@ class TLYShyNavBarManager: NSObject {
     }
     
     func prepareForDisplay() {
-        
+        cleanup()
     }
     
     func cleanup() {
         navBarController.expand()
         previousYOffset = .NaN
+    }
+}
+
+extension TLYShyNavBarManager: UIScrollViewDelegate {
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        _handleScrolling()
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            _handleScrollingEnded()
+        }
+    }
+    
+    func scrollViewDidScrollToTop(scrollView: UIScrollView) {
+        self.scrollView?.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height: 1), animated: true)
+        self.scrollView?.flashScrollIndicators()
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        _handleScrollingEnded()
     }
 }
 

@@ -454,7 +454,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TLYShyNavBar.TLYShyNavBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bojuhuang/Desktop/Repository/TLYShyNavBar/TLYShyNavBar/Classes/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TLYShyNavBar/Classes/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -467,7 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TLYShyNavBar.TLYShyNavBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bojuhuang/Desktop/Repository/TLYShyNavBar/TLYShyNavBar/Classes/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TLYShyNavBar/Classes/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -536,6 +536,7 @@
 				D8C6658A1D5DA2B8006CD8FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8C6658B1D5DA2B8006CD8FC /* Build configuration list for PBXNativeTarget "TLYShyNavBarTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +545,7 @@
 				D8C6658D1D5DA2B8006CD8FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8C6658E1D5DA2B8006CD8FC /* Build configuration list for PBXNativeTarget "TLYShyNavBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +554,7 @@
 				D8C665901D5DA2B8006CD8FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
