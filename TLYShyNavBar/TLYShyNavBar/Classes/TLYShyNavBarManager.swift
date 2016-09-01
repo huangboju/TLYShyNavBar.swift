@@ -243,7 +243,7 @@ class TLYShyNavBarManager: NSObject {
     }
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        if context == kTLYShyNavBarManagerKVOContext {
+        if context == &kTLYShyNavBarManagerKVOContext {
             if isViewControllerVisible && _scrollViewIsSuffecientlyLong() {
                navBarController.expand()
             }
